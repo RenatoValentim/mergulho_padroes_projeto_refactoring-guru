@@ -1,10 +1,10 @@
 import { Curso } from './curso';
 
-export class  Professor {
+export class Professor {
   private curso: Curso
   
-  constructor(curso: string) {
-    this.setCurso = new Curso(curso);
+  constructor(nomeCurso: string) {
+    this.setCurso = new Curso(nomeCurso);
   }
 
   get getCurso(): Curso {
