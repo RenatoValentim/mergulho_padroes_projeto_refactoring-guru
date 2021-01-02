@@ -6,6 +6,8 @@ import { Passenger } from './transporte-aereo/interfaces/passenger';
 import { Helicopter } from './transporte-aereo/helicopter';
 import { Airplane } from './transporte-aereo/airplane';
 import { Airport } from './transporte-aereo/airport';
+import { Professor } from './relacoes-objetos/dependencia/professor';
+import { Curso } from './relacoes-objetos/dependencia/curso';
 
 const tom = new Cat('Tom', SEX.M, 1, 4, 'preto');
 const nina = new Cat('Nina', SEX.F, 0.5, 3, 'preto e branco');
@@ -29,9 +31,6 @@ const airplane = new Airplane();
 const helicopter = new Helicopter();
 const airport = new Airport();
 
-log(
-  airplane.fly('a', 'b', passenger1),
-  helicopter.fly('c', 'd', passenger2),
-  airport.acceptVehicle(airplane),
-  airport.acceptVehicle(helicopter)
-);
+const professor = new Professor('Programação')
+
+log(professor.getCurso);
