@@ -1,13 +1,13 @@
+import { log } from '../utils/log';
 import { Animal } from './animal';
-import { SEX } from '../utils/sex';
 
 export class Dog extends Animal {
   constructor(
-    public name: string,
-    public sex: SEX,
-    public age: number,
-    public weight: number,
-    public color: string,
+    name: string,
+    sex: string,
+    age: number,
+    weight: number,
+    color: string,
   ) {
     super(
       name,
@@ -18,5 +18,7 @@ export class Dog extends Animal {
     );
   }
 
-  bark() {}
+  bark(): void {
+    log('BARK! BARK!...');
+  }
 }
