@@ -1,6 +1,6 @@
 import { log } from '../utils/log';
 
-export class Animal {
+export abstract class Animal {
   private name: string;
   private sex: string;
   private age: number;
