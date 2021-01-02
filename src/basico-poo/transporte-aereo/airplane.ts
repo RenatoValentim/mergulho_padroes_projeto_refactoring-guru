@@ -4,19 +4,15 @@ import { FlyingTransport } from './interfaces/flying-transport';
 import { Passenger } from './interfaces/passenger';
 
 export class Airplane implements FlyingTransport {
-  type: FLYING_TRANSPORT_TYPE;
+  readonly type: FLYING_TRANSPORT_TYPE;
   
   constructor() {
     this.type = FLYING_TRANSPORT_TYPE.AIRPLANE;
   }
-
-  get getType() {
-    return this.type;
-  }
   
   fly(origin: string, destination: string, passengers: Passenger): void {
     log(`
-      Flying...
+      ${this.type} Flying...
       origin: ${origin};
       destination: ${destination};
       passengers:

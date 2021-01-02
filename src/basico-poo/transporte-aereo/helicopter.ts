@@ -4,7 +4,7 @@ import { Passenger } from './interfaces/passenger';
 import { FLYING_TRANSPORT_TYPE } from '../../utils/flying-transport-type';
 
 export class Helicopter implements FlyingTransport {
-  type: FLYING_TRANSPORT_TYPE;
+  readonly type: FLYING_TRANSPORT_TYPE;
 
   constructor() {
     this.type = FLYING_TRANSPORT_TYPE.HELICOPTER;
@@ -12,7 +12,7 @@ export class Helicopter implements FlyingTransport {
 
   fly(origin: string, destination: string, passengers: Passenger) {
     log(`
-      Flying...
+      ${this.type} Flying...
       origin: ${origin};
       destination: ${destination};
       passengers:
