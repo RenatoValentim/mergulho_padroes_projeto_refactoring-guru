@@ -1,7 +1,7 @@
-import { log } from '../utils/log';
+import { log } from '../../utils/log';
 import { Animal } from './animal';
 
-export class Dog extends Animal {
+export class Cat extends Animal {
   constructor(
     name: string,
     sex: string,
@@ -18,7 +18,7 @@ export class Dog extends Animal {
     );
   }
 
-  bark(): void {
-    log('BARK! BARK!...');
+  meow(): void {
+    log('MEOOOOOWWWW...');
   }
 }

@@ -1,5 +1,5 @@
-import { log } from '../utils/log';
-import { SEX } from '../utils/sex';
+import { log } from '../../utils/log';
+import { SEX } from '../../utils/sex';
 import { Cat } from './cat';
 import { Dog } from './dog';
 
