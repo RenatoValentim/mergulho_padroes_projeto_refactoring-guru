@@ -18,7 +18,7 @@ export class Cat extends Animal {
     );
   }
 
-  meow(): void {
+  makeSound(): void {
     log('MEOOOOOWWWW...');
   }
 }

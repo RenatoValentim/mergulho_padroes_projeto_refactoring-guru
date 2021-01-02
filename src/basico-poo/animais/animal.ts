@@ -76,4 +76,6 @@ export abstract class Animal {
   sleep(hours: number): void {
     log(`Sleeping up to ${hours} hours...`);
   }
+
+  abstract makeSound(): void 
 }

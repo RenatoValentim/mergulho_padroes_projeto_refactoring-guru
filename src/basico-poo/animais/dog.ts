@@ -18,7 +18,7 @@ export class Dog extends Animal {
     );
   }
 
-  bark(): void {
+  makeSound(): void {
     log('BARK! BARK!...');
   }
 }
