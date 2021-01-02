@@ -1,7 +1,7 @@
 import { Animal } from './animal';
 import { SEX } from '../utils/sex';
 
-export class Cat extends Animal {
+export class Dog extends Animal {
   constructor(
     public name: string,
     public sex: SEX,
@@ -18,5 +18,5 @@ export class Cat extends Animal {
     );
   }
 
-  meow() {}
+  bark() {}
 }
